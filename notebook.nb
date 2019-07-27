@@ -1,0 +1,42 @@
+Este comando lista os ficheiros:
+$ ls
+>>>
+error.txt
+makefile
+notebook
+notebook.c
+notebook.h
+notebook.nb
+outputs
+relatorio_so.pdf
+temp.txt
+trabalho_pratico_so.zip
+<<<
+Agora podemos ordenar estes ficheiros:
+$| sort
+>>>
+error.txt
+makefile
+notebook
+notebook.c
+notebook.h
+notebook.nb
+outputs
+relatorio_so.pdf
+temp.txt
+trabalho_pratico_so.zip
+<<<
+E escolher o primeiro:
+$2| head -1
+>>>
+error.txt
+<<<
+Mostra makefile:
+$ cat makefile
+>>>
+run:
+	@gcc notebook.c -o notebook
+	@./notebook notebook.nb
+remove:
+	@rm -r outputs error.txt temp.txt notebook
+<<<
